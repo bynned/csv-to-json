@@ -16,4 +16,4 @@ json_data = csv_to_json(csvfile)
 
 # Save json data to file
 with open ('kirjat.json', 'w', encoding='utf-8') as json_file:
-    json.dump(json_data, json_file, indent=4)
+    json.dump(json_data, json_file, indent=4, ensure_ascii=False)
